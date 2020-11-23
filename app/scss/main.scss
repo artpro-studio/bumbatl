@@ -173,6 +173,64 @@ a{
 	}
 }
 
+.footer {
+	background-color: #38A22B;
+	color: #FFFFFF;
+	position: relative;
+	margin-top: 70px;
+	padding-bottom: 60px;
+	box-sizing: border-box;
+	width: 100%;
+	&:before {
+		content: '';
+		width: 100%;
+		height: 70px;
+		background-image: url(../img/footerVector.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: right top;
+		position: absolute;
+		top: -70px;
+		left: 0;
+	}
+	.container {
+		z-index: 2;
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 42px;
+		margin-bottom: 32px;
+	}
+	&__description {
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 30px;
+	}
+	&__button {
+		position: relative;
+		display: inline-block;
+		transition: all .3s;
+
+		span {
+			font-size: 18px;
+			line-height: 21px;
+			color: #38A22B;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+}
+
 
 
 

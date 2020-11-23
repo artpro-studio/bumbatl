@@ -112,4 +112,63 @@
 // ≤992px
 
 
+/*==========  Footer start  ==========*/
+@media screen and (max-width:996px){
+  .footer {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    &:before {
+      height: 50px;
+      top: -50px;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 25px;
+    }
+    &__description {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__button {
+      svg {
+        height: 50px;
+        width: 150px;
+      }
+    }
+  }
+}
+@media screen and (max-width:650px){
+  .footer {
+    margin-top: 40px;
+    padding-bottom: 30px;
+    &:before {
+      height: 40px;
+      top: -40px;
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 25px;
+      margin-bottom: 15px;
+    }
+    &__description {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 20px;
+    }
+    &__button {
+      svg {
+        height: 45px;
+        width: 140px;
+      }
+      span {
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+  }
+
+}
+/*==========  Footer end  ==========*/
+
 
