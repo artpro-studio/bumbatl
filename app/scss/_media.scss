@@ -112,8 +112,11 @@
 // ≤992px
 
 
-/*==========  Footer start  ==========*/
 @media screen and (max-width:996px){
+  .title {
+    font-size: 32px;
+    line-height: 38px;
+  }
   .footer {
     margin-top: 50px;
     padding-bottom: 40px;
@@ -122,8 +125,6 @@
       top: -50px;
     }
     &__title {
-      font-size: 32px;
-      line-height: 38px;
       margin-bottom: 25px;
     }
     &__description {
@@ -138,7 +139,21 @@
     }
   }
 }
+@media screen and (max-width:768px){
+  .partners__row_4 img {
+    flex: 0 0 50%;
+    margin-bottom: 15px;
+
+    &:nth-last-of-type(-n+2) {
+      margin-bottom: 0;
+    }
+  }
+}
 @media screen and (max-width:650px){
+  .title {
+    font-size: 22px;
+    line-height: 25px;
+  }
   .footer {
     margin-top: 40px;
     padding-bottom: 30px;
@@ -147,8 +162,6 @@
       top: -40px;
     }
     &__title {
-      font-size: 22px;
-      line-height: 25px;
       margin-bottom: 15px;
     }
     &__description {
@@ -169,6 +182,31 @@
   }
 
 }
-/*==========  Footer end  ==========*/
 
+@media screen and (max-width: 480px) {
+  .organizers {
+    margin-bottom: 40px;
+
+    &__row img {
+      flex: 0 0 100%;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .partners {
+    &__row_3, &__row_4 {
+      img {
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+      }
+    }
+
+    &__row_4 img:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 

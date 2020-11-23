@@ -173,12 +173,55 @@ a{
 	}
 }
 
+.organizers {
+	margin-bottom: 60px;
+	&__title {
+		margin-bottom: 15px;
+	}
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		img {
+			flex: 0 0 33.333%;
+			max-height: 110px;
+			width: auto;
+		}
+	}
+}
 .partners {
 	&__title {
 		margin-bottom: 15px;
 	}
 	&__row {
+		display: flex;
+		align-items: center;
+		margin-bottom: 40px;
+		flex-wrap: wrap;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		img {
+			max-height: 130px;
+			width: auto;
+		}
+	}
 
+	&__row_3 {
+		justify-content: center;
+
+		img {
+			flex: 0 0 33.333%;
+		}
+	}
+	&__row_4 {
+		justify-content: space-between;
+		img {
+			flex: 0 0 25%;
+		}
 	}
 }
 
@@ -213,9 +256,7 @@ a{
 		z-index: 2;
 	}
 	&__title {
-		font-weight: bold;
-		font-size: 36px;
-		line-height: 42px;
+		color: #ffffff;
 		margin-bottom: 32px;
 	}
 	&__description {
