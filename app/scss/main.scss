@@ -5,6 +5,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 body {
 	background-color: #fff;
@@ -31,7 +32,7 @@ a{
 }
 .header{
 	background-color: $green;
-	padding-top: 49px;
+	padding-top: 25px;
 	padding-bottom: 0px;
 	position: fixed;
 	top: 0;
@@ -46,7 +47,7 @@ a{
 		background-size: cover;
 		background-position: center bottom;
 		position: absolute;
-		bottom: -50px;
+		bottom: -40px;
 		left: 0;
 	}
 	&__content{
@@ -86,7 +87,12 @@ a{
 			}
 		}
 		.auth{
-			.login{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			top: 5px;
+			.login, .logout{
 				position: relative;
 				color: #fff;
 				display: inline-block;
@@ -112,6 +118,55 @@ a{
 					font-size: 14px;
 					line-height: 24px;
 				}
+			}
+			.logout{
+				color: $orange;
+				margin-left: -9px;
+				top: 1px;
+				width: 100px;
+				svg{
+					position: relative;
+				}
+				&:hover{
+					svg{
+						path{
+							fill: #F3F3F3;
+						}
+					}
+				}
+				span{
+					top: 23px;
+					left: 2px;
+				}
+			}
+		}
+	}
+	.burger{
+		width: 30px;
+		height: 30px;
+		span{
+			display: block;
+			height: 3px;
+			width: 30px;
+			background-color: #fff;
+			position: relative;
+			&:before{
+				content: '';
+				height: 3px;
+				width: 30px;
+				background-color: #fff;
+				position: absolute;
+				top: -10px;
+				left: 0;
+			}
+			&:after{
+				content: '';
+				height: 3px;
+				width: 30px;
+				background-color: #fff;
+				position: absolute;
+				top: 10px;
+				left: 0;
 			}
 		}
 	}

@@ -25,7 +25,41 @@
 
 
 /*==========  Mobile First  ==========*/
-
+// ≤1200px
+@media screen and (max-width:1180px){
+  .container{
+    width: 100%;
+    padding: 0 15px;
+    &__content{
+      padding: 0;
+    }
+  }
+}
+@media screen and (max-width:1024px){
+  .header{
+    &__content{
+      .menu{
+        ul{
+          li{
+            margin: 0 10px;
+            a{
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:996px){
+  .header{
+    &__content{
+      .menu{
+        display: none;
+      }
+    }
+  }
+}
 // ≤576px
 @media screen and (max-width:576px){
 
@@ -37,11 +71,6 @@
 }
 
 // ≤992px
-@media screen and (max-width:992px){
 
-}
 
-// ≤1200px
-@media screen and (max-width:1200px){
 
-}
