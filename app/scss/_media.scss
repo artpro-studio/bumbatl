@@ -289,7 +289,40 @@
       }
     }
   }
-
+  .stock{
+    .stock_img1{
+      left: -200px;
+    }
+    .stock_img3{
+      left: 150px;
+    }
+    &__item{
+      margin: 20px 0;
+      margin-bottom: 30px;
+      &__title{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 15px;
+      }
+      &__text{
+        p{
+          font-size: 14px;
+          line-height: 16px;
+        }
+        ol{
+          li{
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 15px;
+          }
+        }
+        strong{
+          font-size: 12px;
+          line-height: 12px;
+        }
+      }
+    }
+  }
 }
 /*==========  Footer end  ==========*/
 

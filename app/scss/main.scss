@@ -380,6 +380,51 @@ a{
 		}
 	}
 }
+.callback{
+	height: 367px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../img/bg-callback.svg');
+	display: flex;
+	align-items: center;
+	margin-top: -40px;
+	&__content{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	&__title{
+		h4{
+			font-weight: normal;
+			font-size: 38px;
+			line-height: 42px;
+			color: #fff;
+			font-family: $angry;
+		}
+	}
+	&__text{
+		h5{
+			font-weight: bold;
+			font-size: 36px;
+			line-height: 42px;
+			color: #fff;
+			margin-bottom: 35px;
+		}
+		ol{
+			margin: 0;
+			padding: 0;
+			padding-left: 35px;
+			li{
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 28px;
+				color: #fff;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
 
 
 
