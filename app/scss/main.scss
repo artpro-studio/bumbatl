@@ -173,6 +173,22 @@ a{
 	}
 }
 
+.partners {
+	&__title {
+		margin-bottom: 15px;
+	}
+	&__row {
+
+	}
+}
+
+.title {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	color: #38A22B;
+}
+
 .footer {
 	background-color: #38A22B;
 	color: #FFFFFF;
