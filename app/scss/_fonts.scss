@@ -1,6 +1,6 @@
 @import "_mixins/font-face";
 
-@include font-face("Angry-Regular'", "../fonts/angry/Angry-Regular", normal);
+@include font-face("Angry-Regular", "../fonts/angry/Angry-Regular", normal);
 @include font-face("Roboto'", "../fonts/Roboto/Roboto-Bold", bold);
 @include font-face("Roboto'", "../fonts/Roboto/Roboto-Regular", normal);
 @include font-face("Roboto'", "../fonts/Roboto/Roboto-Medium", 500);
