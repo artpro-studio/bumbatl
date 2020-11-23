@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Angry-Regular';
+  src: url('Angry-Regular.eot');
+  src: url('Angry-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Angry-Regular.svg#Angry-Regular') format('svg'),
+       url('Angry-Regular.ttf') format('truetype'),
+       url('Angry-Regular.woff') format('woff'),
+       url('Angry-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
