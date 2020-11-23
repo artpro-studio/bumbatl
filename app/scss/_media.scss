@@ -34,6 +34,17 @@
       padding: 0;
     }
   }
+  .stock{
+    .stock_img2{
+      right: -330px;
+    }
+    .stock_img3{
+      left: -100px;
+    }
+    .stock_img4{
+      right: -350px;
+    }
+  }
 }
 @media screen and (max-width:1024px){
   .header{
@@ -57,15 +68,82 @@
       .logo{
         display: flex;
         align-items: center;
+        z-index: 2;
         .burger{
           display: flex;
           justify-content: center;
           align-items: center;
           margin-right: 10px;
+
         }
       }
       .menu{
-        display: none;
+        opacity: 0;
+        transition: .4s all;
+        position: fixed;
+        top: -200%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $green;
+        padding-top: 120px;
+        &.active{
+          top: 0;
+          opacity: 1;
+        }
+        ul{
+          flex-wrap: wrap;
+          li{
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+  .head{
+    height: 700px;
+    h1{
+      font-size: 56px;
+      margin-bottom: 50px;
+    }
+  }
+  .stock{
+    &__item{
+      &__title{
+        font-size: 27px;
+        line-height: 34px
+      }
+      &__text{
+        width: 490px;
+        p{
+          font-size: 18px;
+          line-height: 22px;
+        }
+        ol{
+          li{
+            font-size: 18px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:768px){
+  .stock{
+    padding-bottom:50px;
+    &__item{
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      &__title{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      &__text{
+        width: 100%;
       }
     }
   }
@@ -74,6 +152,9 @@
 @media screen and (max-width:650px){
   .header{
     padding-top: 0;
+    &:before{
+      bottom: -30px;
+    }
     &__content{
       .burger{
         width: 25px;
@@ -96,10 +177,51 @@
       .logo{
         a{
           img{
-            height: 15px;
+            height: 10px;
           }
         }
       }
+      .auth{
+        .login, logout{
+          span{
+            font-size: 12px;
+            top: 9px;
+          }
+        }
+        .login{
+          svg{
+            width: 70px;
+          }
+        }
+        .logout{
+          svg{
+            width: 130px;
+          }
+          span{
+            font-size: 12px;
+            top: 24px;
+            left: -4px;
+          }
+        }
+      }
+    }
+  }
+  body{
+    padding-top: 70px;
+  }
+  .btn{
+    svg{
+      width: 180px;
+      height: auto;
+    }
+    span{
+      font-size: 14px;
+    }
+  }
+  .head{
+    height: 500px;
+    h1{
+      font-size: 30px;
     }
   }
 }
