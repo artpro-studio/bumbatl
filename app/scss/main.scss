@@ -410,13 +410,14 @@ a{
 	&__row {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-between;
 		flex-wrap: wrap;
+		width: 80%;
+		margin: auto;
 
 		img {
-			flex: 0 0 33.333%;
-			max-height: 110px;
-			width: auto;
+			height: auto;
+			width: 125px;
 			transition: all .3s;
 			&:hover {
 				transform: scale(1.1);
@@ -447,11 +448,9 @@ a{
 	}
 
 	&__row_3 {
-		justify-content: center;
-
-		img {
-			flex: 0 0 33.333%;
-		}
+		justify-content: space-between;
+		width: 80%;
+		margin: auto;
 	}
 	&__row_4 {
 		justify-content: space-between;
