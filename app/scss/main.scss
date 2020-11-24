@@ -229,6 +229,77 @@ a{
 	}
 }
 
+.produce {
+	margin-bottom: 77px;
+	&__title {
+		font-family: $angry;
+		font-size: 38px;
+		line-height: 42px;
+		color: #000000;
+		margin-bottom: 20px;
+		width: 38%;
+	}
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__item {
+		transition: all .3s;
+		&:hover {
+			transform: scale(1.1);
+		}
+		img {
+			max-height: 100px;
+			width: auto;
+			margin-bottom: 20px;
+		}
+		.description {
+			font-size: 14px;
+			line-height: 16px;
+			color: #000000;
+			width: 48%;
+		}
+	}
+}
+
+.materials {
+	margin-bottom: 90px;
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__left {
+		.label {
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 21px;
+			margin-bottom: 5px;
+			color: rgba(0, 0, 0, 0.7);
+		}
+		a {
+			font-weight: 400;
+			font-style: italic;
+			font-size: 18px;
+			line-height: 21px;
+			color: #2D9CDB;
+			text-decoration: underline;
+			transition: all .3s;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	&__right {
+		span {
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 21px;
+			color: rgba(0, 0, 0, 0.7);
+		}
+	}
+}
+
 .organizers {
 	margin-bottom: 60px;
 	&__title {
@@ -245,6 +316,10 @@ a{
 			flex: 0 0 33.333%;
 			max-height: 110px;
 			width: auto;
+			transition: all .3s;
+			&:hover {
+				transform: scale(1.1);
+			}
 		}
 	}
 }
@@ -263,6 +338,10 @@ a{
 		img {
 			max-height: 130px;
 			width: auto;
+			transition: all .3s;
+			&:hover {
+				transform: scale(1.1);
+			}
 		}
 	}
 
