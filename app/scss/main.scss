@@ -33,6 +33,10 @@ a{
 .btn{
 	position: relative;
 	display: inline-block;
+	transition: .4s all;
+	&:hover{
+		transform: scale(1.2);
+	}
 	span{
 		font-weight: normal;
 		font-size: 29px;
@@ -219,6 +223,14 @@ a{
 	background-size: cover;
 	padding-top: 170px;
 	height: 900px;
+	.container__content{
+		position: relative;
+	}
+	img{
+		position: absolute;
+		top: -100px;
+		right: 0;
+	}
 	h1{
 		color: #fff;
 		font-weight: normal;
