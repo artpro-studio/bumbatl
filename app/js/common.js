@@ -71,5 +71,10 @@ $(function() {
             }
         }
     });
-
+    $('.js--news-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 4000,
+        prevArrow: $('.news .prev'),
+        nextArrow: $('.news .next'),
+    });
 });
