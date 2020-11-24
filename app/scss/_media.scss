@@ -61,6 +61,29 @@
       }
     }
   }
+  .callback{
+    z-index: 2;
+    position: relative;
+    &__title{
+      h4{
+        font-size: 27px;
+        line-height: 36px;
+      }
+    }
+    &__text{
+      width: 60%;
+      h5{
+        font-size: 24px;
+      }
+      ol{
+        padding-left:25px;
+        li{
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width:996px){
   .header{
@@ -131,6 +154,19 @@
       }
     }
   }
+  .iblock__info{
+    &__text{
+      p{
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+    .video{
+      iframe{
+        height: 400px;
+      }
+    }
+  }
 }
 @media screen and (max-width:768px){
   .stock{
@@ -144,6 +180,22 @@
       }
       &__text{
         width: 100%;
+      }
+    }
+  }
+  .callback{
+    height: 450px;
+    &__content{
+      flex-wrap: wrap;
+    }
+    &__title{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__text{
+      width: 100%;
+      h5{
+        margin-bottom: 10px;
       }
     }
   }
@@ -222,6 +274,51 @@
     height: 500px;
     h1{
       font-size: 30px;
+    }
+  }
+  .callback{
+    height: 300px;
+    &__title{
+      h4{
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+    &__text{
+      h5{
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 10px;
+      }
+      ol{
+        padding-left: 20px;
+        li{
+          font-size: 14px;
+          line-height: 16px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .iblock__info{
+    padding-top: 50px;
+    .iblock_img3{
+      right: -280px;
+    }
+    .iblock_img4{
+      top: 300px;
+    }
+    &__text{
+      p{
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    .video{
+      margin-top: 30px;
+      iframe{
+        height: 300px;
+      }
     }
   }
 }
@@ -334,6 +431,40 @@
     line-height: 28px;
   }
 
+  .stock{
+    .stock_img1{
+      left: -200px;
+    }
+    .stock_img3{
+      left: 150px;
+    }
+    &__item{
+      margin: 20px 0;
+      margin-bottom: 30px;
+      &__title{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 15px;
+      }
+      &__text{
+        p{
+          font-size: 14px;
+          line-height: 16px;
+        }
+        ol{
+          li{
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 15px;
+          }
+        }
+        strong{
+          font-size: 12px;
+          line-height: 12px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
