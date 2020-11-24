@@ -53,6 +53,15 @@ a{
 		height: 100%;
 		width: 100%;
 	}
+	&.white{
+		color: $green;
+		span{
+			color: $green;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
 }
 .header{
 	background-color: $green;
@@ -681,7 +690,140 @@ a{
 		}
 	}
 }
-
-
+.modal{
+	background-color: transparent;
+	background-image: url('../img/modal.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 400px;
+	padding: 0;
+	height: 500px;
+	&__content{
+		padding: 50px 30px;
+	}
+}
+.select{
+	position: relative;
+	margin-bottom: 25px;
+	&.active{
+		.placeholder{
+			.arrow{
+				img{
+					transform: rotate(180deg);
+				}
+			}
+		}
+		ul{
+			display: block;
+		}
+	}
+	.placeholder{
+		background-color: #fff;
+		position: relative;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 16px;
+		padding: 5px 14px;
+		.arrow{
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: #E4E4E4;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			width: 25px;
+			img{
+				height: 7px;
+				transition: .4s all;
+			}
+		}
+	}
+	ul{
+		border-top: 1px #E4E4E4 solid;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		display: none;
+		li{
+			border-bottom: 1px #E4E4E4 solid;
+			padding: 5px 14px;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 16px;
+			transition: .4s all;
+			&:hover{
+				background-color: $orange;
+				color: #fff;
+			}
+		}
+	}
+}
+form{
+	.field{
+		margin-bottom: 25px;
+		input{
+			border: none;
+			background-color: #fff;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 16px;
+			padding: 5px 14px;
+			width: 100%;
+			font-family: $default-font;
+			outline: transparent;
+			border: 1px #fff solid;
+			&.error{
+				border: 1px red solid;
+			}
+			&::placeholder{
+				font-family: $default-font;
+				color: #C0C0C0;
+			}
+		}
+		textarea{
+			border: 1px #fff solid;
+			border: none;
+			background-color: #fff;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 16px;
+			padding: 5px 14px;
+			width: 100%;
+			font-family: $default-font;
+			outline: transparent;
+			height: 110px;
+			&::placeholder{
+				font-family: $default-font;
+				color: #C0C0C0;
+			}
+			&.error{
+				border: 1px red solid;
+			}
+		}
+	}
+	.button{
+		text-align: center;
+	}
+	button.btn{
+		background-color: transparent;
+		outline: transparent;
+		border: none;
+		span{
+			top: 3px;
+		}
+	}
+}
+.fancybox-slide--html .fancybox-close-small{
+	svg{
+		path{
+			fill: #fff;
+		}
+	}
+}
 
 @import "media"; // Always at the end
