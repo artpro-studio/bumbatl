@@ -933,4 +933,86 @@ form{
 	}
 }
 
+.collection {
+	position: relative;
+	.container {
+		z-index: 2;
+	}
+	&__stock {
+		position: absolute;
+		content: '';
+		&:nth-child(1) {
+			left: 0;
+			top: 30%;
+		}
+		&:nth-child(2) {
+			right: 0;
+			top: 15%;
+		}
+	}
+	&__title {
+		margin-bottom: 88px;
+	}
+	&__row {
+		margin-bottom: 89px;
+		display: flex;
+		justify-content: space-between;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		.left {
+			position: relative;
+			flex: 0 0 45%;
+			font-size: 38px;
+			line-height: 42px;
+			font-family: $angry;
+			&.orange {
+				color: $orange;
+			}
+			&.green {
+				color: $green;
+			}
+			p {
+				width: 50%;
+			}
+		}
+		.right {
+			flex: 0 0 55%;
+			.title {
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 28px;
+				margin-bottom: 25px;
+			}
+			ul {
+				width: 93%;
+				position: relative;
+				&.numeric {
+					list-style-type: decimal;
+					padding-left: 20px;
+					box-sizing: border-box;
+					li {
+						display: list-item;
+					}
+				}
+				li {
+					font-size: 24px;
+					line-height: 28px;
+					margin-bottom: 35px;
+					display: flex;
+					align-items: center;
+					&:last-child {
+						margin-bottom: 0;
+					}
+					img {
+						width: 16px;
+						height: auto;
+						margin-right: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+
 @import "media"; // Always at the end
