@@ -48,10 +48,14 @@ $(function() {
                 contentType: false,
                 cache: false,
                 success: function (data) {
-                    $.fancybox.open({
-                        src  : '#modalIsGood',
-                        type : 'inline',
-                    });
+                    if(data == 'ok'){
+                        $.fancybox.open({
+                            src  : '#isGood',
+                            type : 'inline',
+                        });
+                    }else{
+                        alert('Произошла ошибка')
+                    }
                 },
             });
         }else{
