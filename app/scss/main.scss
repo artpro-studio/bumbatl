@@ -10,7 +10,7 @@
 body {
 	background-color: #fff;
 	font-family: $default-font;
-	padding-top: 90ыpx;
+	padding-top: 90px;
 }
 h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
@@ -39,9 +39,9 @@ a{
 	}
 	span{
 		font-weight: normal;
-		font-size: 29px;
-		line-height: 32px;
-		color: #fff;
+		font-size: 22px;
+		line-height: 24px;
+		color: $green;
 		font-family: $angry;
 		position: absolute;
 		top: 0;
@@ -64,8 +64,8 @@ a{
 	}
 }
 .header{
-	background-color: $green;
-	padding-top: 25px;
+	background-color: $orange;
+	padding-top: 40px;
 	padding-bottom: 0px;
 	position: fixed;
 	top: 0;
@@ -76,12 +76,12 @@ a{
 		content: '';
 		width: 100%;
 		height: 100px;
-		background-image: url('../img/bg-header.svg');
+		background-image: url('../img/head-bg.svg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center bottom;
 		position: absolute;
-		bottom: -40px;
+		bottom: -70px;
 		left: 0;
 	}
 	&__content{
@@ -90,8 +90,10 @@ a{
 		align-items: center;
 		position: relative;
 		.menu{
+			padding-left: 80px;
 			ul{
 				display: flex;
+				justify-content: space-between;
 				li{
 					margin: 0 12px;
 					a{
@@ -226,27 +228,36 @@ a{
 }
 
 .head{
-	background-color: $orange;
+	background-color: $green;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	padding-top: 170px;
-	height: 900px;
+	padding-top: 100px;
+	height: 600px;
 	.container__content{
 		position: relative;
 	}
 	img{
 		position: absolute;
-		top: -100px;
+		top: -50px;
 		right: 0;
 	}
 	h1{
 		color: #fff;
 		font-weight: normal;
-		font-size: 72px;
-		line-height: 150%;
+		font-size: 48px;
+		line-height: 53px;
 		font-family: $angry;
 		margin-bottom: 100px;
+		margin-bottom: 40px;
+	}
+	p{
+		font-family: $angry;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 26px;
+		color: #fff;
+		margin-bottom: 50px;
 	}
 }
 
