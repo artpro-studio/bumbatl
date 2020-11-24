@@ -706,11 +706,24 @@ a{
 .modalIsGood{
 	width: 318px;
 	background-color: transparent;
-	background-image: url('../img/modal.svg');
+	background-image: url('../img/isGood.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
 	height: 139px;
+	h4{
+		color: #fff;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 15px;
+	}
+	p{
+		font-weight: normal;
+		font-size: 9px;
+		line-height: 11px;
+		color: #fff;
+	}
 }
 .select{
 	position: relative;
