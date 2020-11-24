@@ -169,6 +169,33 @@
       }
     }
   }
+  .purpose {
+    &__column {
+      .icon {
+        height: 70px;
+      }
+      .description {
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 25px;
+      }
+      ul li {
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 25px;
+      }
+    }
+    &__stock {
+      transform: scale(0.8);
+
+      &:nth-child(-n+4) {
+        left: -20px;
+      }
+      &:nth-last-child(-n+4) {
+        right: -30px;
+      }
+    }
+  }
 }
 @media screen and (max-width:768px){
   .stock{
@@ -198,6 +225,33 @@
       width: 100%;
       h5{
         margin-bottom: 10px;
+      }
+    }
+  }
+  .purpose {
+    &__column {
+      .icon {
+        height: 50px;
+      }
+      .description {
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 20px;
+      }
+      ul li {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    &__stock {
+      transform: scale(0.6);
+
+      &:nth-child(-n+4) {
+        left: -35px;
+      }
+      &:nth-last-child(-n+4) {
+        right: -60px;
       }
     }
   }
@@ -323,6 +377,82 @@
       margin-top: 30px;
       iframe{
         height: 300px;
+      }
+    }
+  }
+  .purpose {
+    background-image: unset;
+    margin-bottom: 20px;
+    padding: 0;
+    &__content {
+      flex-wrap: wrap;
+    }
+    &__column {
+      flex: 0 0 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+      .icon {
+        margin: 20px 0;
+      }
+      &:nth-child(1) {
+        background-color: $green;
+      }
+      &:nth-child(2) {
+        background-color: #C62828;
+      }
+      .icon {
+        height: 40px;
+      }
+      .description {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 15px;
+      }
+      ul li {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &__stock {
+      transform: scale(0.4);
+
+      &:nth-child(1) {
+        left: -40px;
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        left: -19px;
+        top: 17%;
+      }
+
+      &:nth-child(3) {
+        left: -27px;
+        top: 22%;
+      }
+
+      &:nth-child(4) {
+        left: -16px;
+        top: 32%;
+      }
+
+      &:nth-child(5) {
+        right: -32px;
+        top: 50%;
+      }
+      &:nth-child(6) {
+        right: -47px;
+        top: 58%;
+      }
+      &:nth-child(7) {
+        right: -78px;
+        top: 60%;
+      }
+      &:nth-child(8) {
+        right: -32px;
+        top: 85%;
       }
     }
   }
