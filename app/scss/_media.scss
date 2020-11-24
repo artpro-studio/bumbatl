@@ -23,7 +23,20 @@
       right: -350px;
     }
   }
-
+  .news{
+    &__content {
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    .arrows {
+      .prev {
+        left: -5px;
+      }
+      .next{
+        right: -5px;
+      }
+    }
+  }
 
 }
 
@@ -291,6 +304,20 @@
       }
     }
   }
+  .news {
+    &__item {
+      .info-block {
+        .title {
+          font-size: 32px;
+          line-height: 36px;
+        }
+        .text {
+          font-size: 22px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -364,6 +391,7 @@
   }
 
   .collection {
+    margin-top: -30px;
     margin-bottom: 30px;
     &__stock {
       transform: scale(.6);
@@ -431,6 +459,36 @@
       svg {
         width: 150px;
         height: 60px;
+      }
+    }
+  }
+  .news {
+    margin-top: 30px;
+    padding-bottom: 100px;
+    min-height: unset;
+    &__item {
+      .title {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .date {
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 10px;
+      }
+      .info-block {
+        flex-wrap: wrap;
+        .title {
+          flex: 0 0 100%;
+          padding-right: 0;
+          font-size: 26px;
+          line-height: 28px;
+        }
+        .text {
+          flex: 0 0 100%;
+          font-size: 14px;
+          line-height: 16px;
+        }
       }
     }
   }
@@ -814,6 +872,27 @@
               margin-right: 5px;
             }
           }
+        }
+      }
+    }
+  }
+  .news {
+    background-size: cover;
+    padding-bottom: 150px;
+    &__item {
+      .title {
+        margin-bottom: 10px;
+      }
+
+      .date {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+      .info-block {
+        .title {
+          font-size: 22px;
+          line-height: 24px;
         }
       }
     }

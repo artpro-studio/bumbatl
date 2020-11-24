@@ -1043,9 +1043,12 @@ form{
 	box-sizing: border-box;
 	&__item {
 		outline: none;
+		opacity: 0;
+		transition: all .3s;
+		&.slick-current {
+			opacity: 1;
+		}
 		.title {
-			font-size: 36px;
-			line-height: 42px;
 			margin-bottom: 30px;
 			color: #ffffff;
 			p {
@@ -1063,6 +1066,7 @@ form{
 			display: flex;
 			justify-content: space-between;
 			.title {
+				text-transform: uppercase;
 				flex: 0 0 45%;
 				font-family: $angry;
 				font-size: 35px;
