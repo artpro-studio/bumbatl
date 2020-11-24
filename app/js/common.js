@@ -48,7 +48,10 @@ $(function() {
                 contentType: false,
                 cache: false,
                 success: function (data) {
-
+                    $.fancybox.open({
+                        src  : '#modalIsGood',
+                        type : 'inline',
+                    });
                 },
             });
         }else{
