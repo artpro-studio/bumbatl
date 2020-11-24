@@ -715,4 +715,30 @@
     }
   }
 }
+@media screen and (max-width: 375px) {
+  .modal{
+    width: 100%;
+  }
+  .select{
+    margin-bottom: 12px;
+  }
+  .modal{
+    background-position: top center;
+    &__content{
+      padding: 35px 30px;
+    }
+  }
+  form{
+    .field{
+      margin-bottom: 12px;
+    }
+    .button{
+      .btn{
+        &.white{
+          transform: scale(0.7);
+        }
+      }
+    }
+  }
+}
 
