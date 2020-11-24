@@ -36,6 +36,10 @@ $(function() {
         if(phone != '' || mail != ''){
             let data = new FormData();
             data.append('name', name);
+            data.append('phone', phone);
+            data.append('mail', mail);
+            data.append('text', text);
+            data.append('theme', theme);
             $.ajax({
                 type: "POST",
                 url: "/mail.php",
@@ -43,7 +47,6 @@ $(function() {
                 processData: false,
                 contentType: false,
                 cache: false,
-                timeout: 600000,
                 success: function (data) {
 
                 },

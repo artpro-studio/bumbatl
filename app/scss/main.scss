@@ -703,6 +703,15 @@ a{
 		padding: 50px 30px;
 	}
 }
+.modalIsGood{
+	width: 318px;
+	background-color: transparent;
+	background-image: url('../img/modal.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	height: 139px;
+}
 .select{
 	position: relative;
 	margin-bottom: 25px;
