@@ -83,7 +83,7 @@ $(function() {
         }
     });
     $('.js--news-slider').slick({
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
         prevArrow: $('.news .prev'),
         nextArrow: $('.news .next'),
