@@ -2,6 +2,17 @@ $(function() {
 
 	// Custom JS
 
+    // Custom JS
+    $(".menu").on("click","a", function (event) {
+        event.preventDefault(); //опустошим стандартную обработку
+        var id  = $(this).attr('href'), //заберем айдишник блока с параметром URL
+            top = $(id).offset().top; //определим высоту от начала страницы до якоря
+        $('body,html').animate({scrollTop: top}, 1000); //сделаем прокрутку за 1 с
+        $('.mobile__menu').toggleClass('active');
+        $('.burger').toggleClass('active');
+    });
+
+
     $('.burger').on('click', function () {
         $(this).toggleClass('active');
         $('.menu').toggleClass('active');
@@ -72,7 +83,7 @@ $(function() {
         }
     });
     $('.js--news-slider').slick({
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
         prevArrow: $('.news .prev'),
         nextArrow: $('.news .next'),

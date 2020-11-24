@@ -91,6 +91,7 @@ a{
 		position: relative;
 		.menu{
 			padding-left: 80px;
+			width: 100%;
 			ul{
 				display: flex;
 				justify-content: space-between;
@@ -597,6 +598,10 @@ a{
 				line-height: 19px;
 				color: #4D4D4D;
 			}
+			a{
+				color: #2D9CDB;
+				text-decoration: underline;
+			}
 		}
 	}
 }
@@ -694,6 +699,11 @@ a{
 	.video{
 		margin-top: 60px;
 		iframe{
+			width: 100%;
+			height: 665px;
+			position: relative;
+		}
+		video{
 			width: 100%;
 			height: 665px;
 			position: relative;
